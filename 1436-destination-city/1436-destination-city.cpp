@@ -1,7 +1,7 @@
 class Solution {
 public:
     string destCity(vector<vector<string>>& paths) {
-       map<string,int>mp;
+       unordered_map<string,int>mp;
         int len=paths.size();
         for(int i=0;i<len;i++){
             mp[paths[i][0]]++;
