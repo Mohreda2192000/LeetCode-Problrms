@@ -2,8 +2,8 @@ class Solution {
 public:
     string destCity(vector<vector<string>>& paths) {
        map<string,int>mp;
-        
-        for(int i=0;i<paths.size();i++){
+        int len=paths.size();
+        for(int i=0;i<len;i++){
             mp[paths[i][0]]++;
             mp[paths[i][1]]--;
         }
